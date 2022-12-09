@@ -23,7 +23,6 @@ app.get('/', (req, res) => {
     res.send('Hello world')
 })
 
-
 app.post('/addBook', bookValidation, async (req, res) => {
     const errors = validationResult(req)
     if (!errors.isEmpty()) {
